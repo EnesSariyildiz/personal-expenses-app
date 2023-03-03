@@ -17,13 +17,19 @@ class MyApp extends StatelessWidget {
           ),
           body: Column(
             // ignore: prefer_const_literals_to_create_immutables
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Card(
-                color: Colors.blue,
-                child: Text('CHART'),
-                elevation: 5,
+              Container(
+                width: double.infinity,
+                child: Card(
+                  color: Colors.blue,
+                  child: Text('CHART'),
+                  elevation: 5,
+                ),
               ),
               Card(
+                color: Colors.red,
                 child: Text('LIST OF TX'),
               ),
             ],
