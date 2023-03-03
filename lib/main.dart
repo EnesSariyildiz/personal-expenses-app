@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:personal_expenses_app/transaction.dart';
 // ignore_for_file: prefer_const_constructors
 
-void main() => runApp(const MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  final List<Transaction> transaction = [];
 
   @override
   Widget build(BuildContext context) {
